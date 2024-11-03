@@ -18,7 +18,8 @@ a {
 }
 
 a:hover {
-  color: #ba69ea text-decoration: none;
+  color: #ba69ea;
+  text-decoration: none;
 }
 
 h1,
@@ -240,6 +241,10 @@ h6 {
     top: 90%;
 
   }
+}
+
+.modal {
+  top:10%;
 }
 
 .modal-content {
@@ -903,6 +908,51 @@ h6 {
   cursor: pointer;
 }
 
+@media (min-width: 769px) {
+  #hero .carousel-item {
+    background-size: cover;
+  }
+}
+
+/* Background styles for mobile screens */
+@media (max-width: 768px) {
+  #hero {
+    height: 33vh;
+  }
+
+  #hero .carousel-item {
+    background-size: contain;
+  }
+
+  #hero .carousel-container {
+    bottom: 40px;
+    top: 70px;
+    left: 10px;
+    right: 10px;
+  }
+
+  #hero .carousel-content {
+    width: 90%;
+    padding: 15px;
+    background: rgba(28, 23, 21, 0.6);
+  }
+
+  #hero .carousel-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #hero .carousel-content p {
+    font-size: 14px;
+  }
+
+  #hero .btn-get-started {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+}
+
+/* Larger Screens */
 @media (min-width: 1024px) {
   #hero .carousel-content {
     width: 60%;
@@ -914,24 +964,9 @@ h6 {
   }
 }
 
-@media (max-width: 992px) {
-  #hero {
-    height: calc(100vh - 70px);
-  }
-
-  #hero .carousel-content h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-  }
-
-  #hero .carousel-content p {
-    font-size: 15px;
-  }
-}
-
 @media (max-height: 500px) {
   #hero {
-    height: 120vh;
+    height: 20vh;
   }
 }
 
@@ -1696,7 +1731,8 @@ section {
 }
 
 .pricing .featured {
-  background: #ba69ea box-shadow: none;
+  background: #ba69ea;
+   box-shadow: none;
 }
 
 .pricing .featured h3,
@@ -2763,15 +2799,6 @@ section {
   font-weight: 600;
   padding-bottom: 18px;
 }
-.sec-title2 h2 {
-  position: relative;
-  display: block;
-  font-size: 40px;
-  line-height: 1.28em;
-  color: #191e34;
-  font-weight: 600;
-  padding-bottom: 18px;
-}
 
 .sec-title h2:before {
   position: absolute;
@@ -2920,7 +2947,7 @@ section {
   position: absolute;
   right: -110px;
   top: 50%;
-  font-size: 325px;
+  font-size: 32px;
   line-height: 1em;
   color: #ffffff;
   margin-top: -175px;
@@ -3289,4 +3316,175 @@ section {
 
 .inner-banner-section .inner-banner img {
   width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Font responsiveness
+--------------------------------------------------------------*/
+@media (max-width:768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  #header .logo h1 {
+    font-size: 20px;
+  }
+  
+  #hero .carousel-content h2 {
+    font-size: 18px;
+  }
+
+  #hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+  font-size: 28px;
+}
+#hero .carousel-content h2 {
+  font-size: 20px;
+}
+#hero .carousel-content p {
+  font-size: 12px;
+}
+.section-title h2 {
+  font-size: 20px;
+}
+.breadcrumbs h1 {
+  font-size: 18px;
+}
+.cta h1, h3 {
+  font-size: 20px;
+}
+.services .title {
+  font-size: 16px;
+}
+.services .description {
+  font-size: 14px;
+}
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 16px;
+}
+.portfolio .portfolio-item .portfolio-info p {
+  font-size: 12px;
+}
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  font-size: 20px;
+}
+
+.portfolio .portfolio-item .portfolio-links a {
+  font-size: 20px;
+}
+.cta {
+  margin-top: -4rem;
+}
+.about-us .content h3 {
+  font-size: 20px;
+}
+
+.about-us .content .icon-box h4 {
+  font-size: 18px;
+}
+.blk-txt {
+  padding: 1em;
+}
+.team .member .member-info h4 {
+  font-size: 16px;
+}
+.card__bx .card__data h3 {
+  font-size: 1.2rem;
+}
+.card__bx .card__data p {
+  font-size: 14px;
+}
+.team .member .member-info p {
+  font-size: 12px;
+}
+.features .nav-link h4 {
+  font-size: 16px;
+}
+.features .nav-link p {
+  font-size: 12px;
+}
+.cta-pricing h3 {
+  font-size: 18px;
+}
+.testimonials .testimonial-item h3 {
+  font-size: 16px;
+}
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #fecfc0;
+  font-size: 20px;
+}
+.contact .info h4 {
+  font-size: 18px;
+}
+
+.contact .info p {
+  font-size: 12px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  font-size: 12px;
+}
+.portfolio-details .portfolio-title {
+  font-size: 18px;
+}
+.portfolio-details .portfolio-info h3 {
+  font-size: 16px;
+}
+
+.portfolio-details .portfolio-info p {
+  font-size: 14px;
+}
+#footer {
+  font-size: 13px;
+}
+#footer .footer-top .footer-contact h3 {
+  font-size: 18px;
+}
+#footer .footer-top .footer-contact p {
+  font-size: 12px;
+}
+#footer .footer-newsletter {
+  font-size: 13px;
+}
+#footer .footer-newsletter h4 {
+  font-size: 14px;
+}
+.sec-title .title {
+  font-size: 16px;
+}
+.sec-title h2 {
+  font-size: 24px;
+}
+.sec-title .text {
+  font-size: 13px;
+}
+.btn-style-one {
+  font-size: 15px;
+}
+
+.service-section .text {
+  font-size: 14px;
+}
+.service-section .image-column .text-layer {
+  font-size: 24px;
+}
+.service-section .image-column .inner-column .author-desc h2 {
+  font-size: 18px;
+}
+.service-section .image-column .inner-column .author-desc span {
+  font-size: 14px;
+}
+.service-section .sec-title-2 h2 {
+  font-size: 24px;
+}
+.inner-column img{
+  width:60%;
+}
+.service-section .image-column .inner-column .author-desc {
+  bottom: -52px;
+  left: 70px;
+  width: calc(100% - 232px);
+}
 }
